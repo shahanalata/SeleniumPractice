@@ -12,7 +12,7 @@ import java.util.List;
 public class FlipCart {
 
     @Test
-     public void Dynamic_Drop_Down() throws InterruptedException {
+     public void Suggestive_Drop_Down() throws InterruptedException {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.flipkart.com/");
@@ -30,16 +30,7 @@ public class FlipCart {
                 allNames.get(i).click();
             }
         }
-
-
-
-
-
-
         Thread.sleep(3000l);
-       driver.quit();
+        driver.quit();
     }
-
-
-
 }
