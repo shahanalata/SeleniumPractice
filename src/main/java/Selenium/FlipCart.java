@@ -17,7 +17,6 @@ public class FlipCart {
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.flipkart.com/");
         driver.findElement(By.xpath("//div[@class='_2QfC02']/button")).click();
-       //driver.findElement(By.xpath("//button[@class='_2KpZ6l _2doB4z']")).click();
         driver.findElement(By.cssSelector("._3704LK")).sendKeys("iphone14");
         Thread.sleep(3000);
        List<WebElement> allNames = driver.findElements(By.xpath("//div[contains(@class,'lrtEPN _17d0yO')]"));
@@ -29,8 +28,10 @@ public class FlipCart {
                 allNames.get(i).click();
             }
         }
+
         Thread.sleep(3000l);
         driver.quit();
     }
 }
-////a[@class='_3izBDY']//div[@class='lrtEPN _17d0yO']//span
+//driver.findElement(By.xpath("//button[@class='_2KpZ6l _2doB4z']")).click();
+//a[@class='_3izBDY']//div[@class='lrtEPN _17d0yO']//span
