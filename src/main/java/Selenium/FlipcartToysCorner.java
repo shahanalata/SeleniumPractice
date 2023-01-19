@@ -32,7 +32,7 @@ public class FlipcartToysCorner {
       a.moveToElement(ss).perform();
         WebElement d = driver.findElement(By.xpath("//a[@class='_6WOcW9'][2]"));
         a.moveToElement(d).click().build().perform();
-       // a.click().perform();
+       //a.click().perform();
         System.out.println(driver.getTitle());
 
 
@@ -40,8 +40,8 @@ public class FlipcartToysCorner {
       // a.contextClick().perform();
      //  a.clickAndHold().perform();
 //a[@class='_6WOcW9']
-      // Thread.sleep(3000l);
-     // driver.quit();
+      Thread.sleep(3000l);
+     driver.quit();
 
     }
 }
